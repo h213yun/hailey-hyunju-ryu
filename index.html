@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Hyunju Ryu</title>
   <meta name="author" content="Hyunju Ryu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/KoreaUniLogo.png">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -22,10 +27,10 @@
               <p>
                 I am a first-year Ph.D. student in Artificial Intelligence at
                 <a href="https://www.korea.ac.kr/">Korea University</a>
-                (Computer Vision Lab, advised by Sangpil Kim), focusing on reinforcement learning for character control, multimodal generative models, and image watermarking.
+                (<a href="https://kuaicv.com/">Computer Vision Lab</a>, advised by <a href="https://kuaicv.com/professor/">Sangpil Kim</a>), focusing on reinforcement learning for character control, multimodal generative models, and image watermarking.
                 <br>
                 <br>
-                Previously, I received my B.E. in Engineering from Sungshin Women's University, where I focused on AI security and cloud security.
+                Previously, I received my B.E. in Engineering from <a href="https://www.sungshin.ac.kr/">Sungshin Women's University</a>, where I focused on AI and cloud security.
                 <br>
                 <br>
                 I am broadly interested in developing simple yet effective approaches to complex embodied AI problems, and I am always happy to connect. Feel free to reach out if you'd like to collaborate or chat.
@@ -55,37 +60,12 @@
   <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
-        <h2> About </h2>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="100%" valign="middle">
-              <p>
-                My recent work has focused on robust visual understanding and trustworthy AI systems.
-                I am especially interested in building models that stay reliable under real-world shifts, transformations, and deployment constraints.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <br>
-
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
         <h2> News </h2>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="100%" valign="middle">
               <p>
-                2026/03 - Started Ph.D. in Artificial Intelligence at Korea University.
-                <br>
-                2026/02 - Graduated from Sungshin Women's University with a B.E. in Convergence Security Engineering.
-                <br>
-                2026 - Co-authored the CVPR 2026 paper <em>WaTeRFlow: Watermark Temporal Robustness via Flow Consistency</em>.
-                <br>
-                2025 - Worked on humanoid control in physics simulation and watermark robustness under video transformations at Korea University Computer Vision Lab.
+                02/2026 - One paper got accepted at <strong>CVPR 2026</strong>! 
               </p>
             </td>
           </tr>
@@ -93,61 +73,66 @@
       </td>
     </tr>
   </table>
+
   <br>
 
   <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
-        <h2> Selected Publications </h2>
-        <h3>WaTeRFlow</h3>
-        <p>
-          <strong>WaTeRFlow: Watermark Temporal Robustness via Flow Consistency</strong>
-          <br>
-          Utae Jeong, Sumin In, <strong>Hyunju Ryu</strong>, Jaewan Choi, Feng Yang, Jongheon Jeong, Seungryong Kim, Sangpil Kim
-          <br>
-          CVPR 2026
-        </p>
-        <br>
+        <h2> Publications </h2>
       </td>
     </tr>
-  </table>
-  <br>
-
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
-        <h2> Experience </h2>
-        <p>
-          <strong>Korea University Computer Vision Lab</strong>, Research Intern
-          <br>
-          May 2025 - Feb. 2026
-        </p>
-        <br>
-        <p>
-          <strong>Sungshin Women's University TAIS Lab</strong>, Research Intern
-          <br>
-          Dec. 2024 - Apr. 2025
-        </p>
-        <br>
-        <p>
-          <strong>NAEIL System</strong>, Freelancer
-          <br>
-          Aug. 2023 - Present
-        </p>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="publication-media">
+              <video class="publication-preview" autoplay muted loop playsinline preload="metadata" aria-label="WaTeRFlow preview">
+                <source src="images/waterflow_video.mp4" type="video/mp4">
+                <img src="images/waterflow.gif" alt="WaTeRFlow preview">
+              </video>
+            </td>
+            <td class="publication-content">
+              <p>
+                <papertitle>WaTeRFlow: Watermark Temporal Robustness via Flow Consistency</papertitle>
+              </p>
+              <author>Utae Jeong</author>,
+              <author>Sumin In</author>,
+              <strong>Hyunju Ryu</strong>,
+              <author>Jaewan Choi</author>,
+              <author>Feng Yang</author>,
+              <author>Jongheon Jeong</author>,
+              <author>Seungryong Kim</author>,
+              <author>Sangpil Kim</author>
+              <br>
+              <span style="color:green;"><em>Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2026</em></span>
+              <br>
+              <a href="https://arxiv.org/pdf/2512.19048">[Paper]</a>
+              <a href="https://github.com/kuai-lab/cvpr26_WaTeRFlow">[Code]</a>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
   </table>
+
+  <br>
   <br>
 
   <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
         <p align="right">
-          Website template from <a href="https://github.com/jonbarron/website">Jon Barron</a>.
+          Last updated: <span id="last-updated">May 2, 2026</span>
+        </p>
+        <p align="right">
+          Website template adapted from <a href="https://github.com/jonbarron/website">Jon Barron</a>.
         </p>
       </td>
     </tr>
   </table>
   <br>
+
 </body>
+
 </html>

@@ -1,140 +1,100 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+:root {
+  --bg: #fcfbf8;
+  --text: #2f3437;
+  --muted: #6f777d;
+  --heading: #1f2529;
+  --link: #0b5fa5;
+  --link-hover: #083d6b;
+  --accent: #d9e7f3;
 }
 
 a {
-  /* color: #196CD1; */
-  color: #2470ce;
+  color: var(--link);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:focus,
 a:hover,
 author:focus,
 author:hover {
-  /* color: #B908C5; */
+  color: var(--link-hover);
   text-decoration: underline;
-  }
+}
 
 body,
 td,
 th,
-tr{
-  /* font-family: 'Lato', Verdana, Arial, sans-serif; */
-  font-family: 'Lato', Arial, sans-serif;
+tr {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 16px;
-  color: #404040;
-  line-height: 1.5;
+  color: var(--text);
+  line-height: 1.7;
 }
 
-p{
-  font-family: 'Lato', Arial, sans-serif;
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+p {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 16px;
-  color: #404040;
-  margin:0;
-  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.75;
 }
 
 papertext,
-author{
-  font-family: 'Lato', Arial, sans-serif;
+author {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 16px;
-  color: #777777;
-  line-height: 1.5;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
-a{
-  font-family: 'Lato', Arial, sans-serif;
+a {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 16px;
+  font-weight: 500;
 }
 
 strong {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: var(--heading);
+  font-weight: 600;
 }
 
-heading{
-  font-family: 'Lato', Arial, sans-serif;
+heading {
+  font-family: 'Space Grotesk', Arial, sans-serif;
   font-size: 22px;
-  color: #333333;
+  color: var(--heading);
 }
 
-talktitle,
 papertitle {
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-size: 20px;
   font-weight: 700;
-  color: #333333;
+  color: var(--heading);
   line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+author {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 name {
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 36px;
-  color: #333333;
-  line-height: 1.8;
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--heading);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
 }
 
 .one {
@@ -159,31 +119,138 @@ name {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: #fff4c8;
 }
 
-h2{
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 17px;
-  margin:0;
-  line-height: 3;
-  color: #333333;
+h2 {
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 18px;
+  line-height: 1.1;
+  color: var(--heading);
+  letter-spacing: -0.04em;
 }
 
-
-h3{
-  font-family: 'Lato', Arial, sans-serif;
+h3 {
+  font-family: 'Space Grotesk', Arial, sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: var(--heading);
+  font-weight: 600;
 }
 
-h4{
-  font-family: 'Lato', Arial, sans-serif;
+h4 {
+  font-family: 'Space Grotesk', Arial, sans-serif;
   font-size: 16px;
-  margin:0;
-  color: #333333;
+  margin: 0;
+  color: var(--heading);
+  font-weight: 600;
 }
 
 ul {
   margin: 0;
+  padding-left: 18px;
+}
+
+/* Image hover effects */
+.hoverZoomLink {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.hoverZoomLink:hover {
+  transform: scale(1.03);
+}
+
+.publication-media,
+.publication-content {
+  padding: 14px 10px;
+  vertical-align: top;
+}
+
+.publication-media {
+  width: 20%;
+}
+
+.publication-preview {
+  width: 220px;
+  max-width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 14px;
+  background: #dfe6ee;
+}
+
+.publication-content {
+  width: 80%;
+}
+
+.publication-content p:first-child {
+  margin-bottom: 8px;
+}
+
+.publication-content p:last-child {
+  margin-top: 12px;
+}
+
+td[width="65%"] p:first-child {
+  margin-bottom: 26px;
+}
+
+table[width="900"] {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+table[width="900"]:first-of-type {
+  margin-top: 56px;
+}
+
+span strong {
+  color: inherit;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  table[width="900"] {
+    width: 100% !important;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 0 18px;
+  }
+
+  td[width="65%"],
+  td[width="30%"],
+  td[width="20%"],
+  td[width="80%"] {
+    width: 100% !important;
+  }
+
+  td[width="30%"] {
+    display: block;
+    padding-left: 0 !important;
+    padding-top: 16px;
+  }
+
+  .publication-media,
+  .publication-content {
+    display: block;
+    width: 100% !important;
+    padding: 8px 0;
+  }
+
+  .publication-preview {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  name {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }
