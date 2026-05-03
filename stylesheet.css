@@ -15,9 +15,7 @@ a {
 }
 
 a:focus,
-a:hover,
-author:focus,
-author:hover {
+a:hover {
   color: var(--link-hover);
   text-decoration: underline;
 }
