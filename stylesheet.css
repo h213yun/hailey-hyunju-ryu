@@ -192,21 +192,6 @@ ul {
   margin-top: 12px;
 }
 
-.visitor-widget {
-  margin: 0 0 20px auto;
-  width: fit-content;
-  text-align: center;
-}
-
-.visitor-widget-label {
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 td[width="65%"] p:first-child {
   margin-bottom: 26px;
 }
@@ -222,6 +207,15 @@ table[width="900"]:first-of-type {
 
 span strong {
   color: inherit;
+}
+
+.footer-updated {
+  text-align: right;
+}
+
+.footer-credit {
+  margin-top: 8px;
+  text-align: center;
 }
 
 /* Responsive design for smaller screens */
