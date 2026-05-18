@@ -154,7 +154,7 @@ ul {
 .hoverZoomLink {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 .hoverZoomLink:hover {
@@ -176,7 +176,6 @@ ul {
   max-width: 100%;
   display: block;
   border: 0;
-  border-radius: 12px;
   background: #dfe6ee;
 }
 
