@@ -88,7 +88,7 @@ author {
 
 name {
   font-family: 'Space Grotesk', Arial, sans-serif;
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 700;
   color: var(--heading);
   line-height: 1.05;
@@ -161,25 +161,89 @@ ul {
   transform: scale(1.03);
 }
 
-.publication-media,
-.publication-content {
-  padding: 14px 10px;
-  vertical-align: top;
+/* Reduce profile photo size and ensure it's centered without relying on inline width */
+td[width="35%"] img.hoverZoomLink {
+  width: 80% !important;
+  max-width: 220px;
+  min-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: default;
+  transition: none;
+}
+
+td[width="35%"] img.hoverZoomLink:hover {
+  transform: none;
+}
+
+td[width="35%"] {
+  width: 35%;
+  min-width: 190px;
+}
+
+td[width="65%"] {
+  width: 65%;
+}
+
+td[width="35%"] img.hoverZoomLink:hover {
+  transform: none;
+}
+
+/* Profile photo sizing + responsive centering */
+/* Profile photo sizing + responsive centering */
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
 .publication-media {
+  padding: 14px 10px;
+  vertical-align: top;
   width: 20%;
 }
 
 .publication-preview {
-  width: 220px;
+  width: 160px;
   max-width: 100%;
   display: block;
   border: 0;
   background: #dfe6ee;
 }
 
+.publication-links {
+  margin-top: 14px;
+}
+
+.publication-links.waterflow-links {
+  margin-top: 40px;
+}
+
+/* Rectangular publication buttons */
+.publication-links a {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 10px;
+  border-radius: 0;
+  background: #6a6a6a;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.publication-links a:hover {
+  background: #555555;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .publication-content {
+  padding: 14px 10px;
+  vertical-align: top;
   width: 80%;
 }
 
@@ -195,12 +259,15 @@ td[width="65%"] p:first-child {
   margin-bottom: 26px;
 }
 
-table[width="900"] {
+table[width="1100"] {
+  width: min(1100px, calc(100% - 32px)) !important;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 28px;
   margin-bottom: 28px;
 }
 
-table[width="900"]:first-of-type {
+table[width="1100"]:first-of-type {
   margin-top: 56px;
 }
 
@@ -219,7 +286,7 @@ span strong {
 
 /* Responsive design for smaller screens */
 @media (max-width: 900px) {
-  table[width="900"] {
+  table[width="1100"] {
     width: 100% !important;
     margin-top: 18px;
     margin-bottom: 18px;
@@ -227,14 +294,16 @@ span strong {
   }
 
   td[width="65%"],
-  td[width="30%"],
+  td[width="35%"],
   td[width="20%"],
   td[width="80%"] {
     width: 100% !important;
   }
 
-  td[width="30%"] {
+  td[width="35%"] {
     display: block;
+    width: 100% !important;
+    min-width: 0;
     padding-left: 0 !important;
     padding-top: 16px;
   }
@@ -264,5 +333,27 @@ span strong {
 
   h2 {
     font-size: 24px;
+  }
+}
+
+/* Smaller phones: reduce name and image sizes further */
+@media (max-width: 480px) {
+  name {
+    font-size: 28px;
+  }
+
+  td[width="35%"] img.hoverZoomLink {
+    width: min(160px, 55vw) !important;
+    min-width: 96px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Ensure image cell doesn't keep left padding on narrow screens */
+  td[width="35%"] {
+    padding-left: 0 !important;
+    text-align: center !important;
   }
 }
